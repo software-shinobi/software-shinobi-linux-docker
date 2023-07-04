@@ -1,7 +1,11 @@
-set ex;
+#!/bin/bash
 
-reset;
+##
 
-clear;
+set -e;
+
+set -x;
+
+##
 
 docker login

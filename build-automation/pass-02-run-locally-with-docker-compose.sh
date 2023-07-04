@@ -1,7 +1,19 @@
-set ex;
+#!/bin/bash
 
-#docker run -d -p 8082:80 softwareshinobi/software-shinobi-resume:latest .
+##
+
+set -e;
+
+set -x;
+
+##
 
 cd ../source-code
 
-docker-compose up -d
+##
+
+docker-compose down --remove-orphans;
+
+##
+
+docker-compose up -d;

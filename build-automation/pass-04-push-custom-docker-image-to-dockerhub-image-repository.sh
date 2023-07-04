@@ -1,10 +1,17 @@
-set ex;
+#!/bin/bash
 
-reset;
+##
 
-clear;
+set -e;
 
-docker tag software-shinobi-resume softwareshinobi/software-shinobi-resume:latest
+set -x;
 
-docker push softwareshinobi/software-shinobi-resume
-docker push softwareshinobi/software-shinobi-resume:latest
+##
+
+docker tag software-developer-things-linux softwareshinobi/software-developer-things-linux:latest
+
+##
+
+docker push softwareshinobi/software-developer-things-linux
+
+docker push softwareshinobi/software-developer-things-linux:latest
