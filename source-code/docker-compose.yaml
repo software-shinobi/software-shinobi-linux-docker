@@ -2,20 +2,20 @@ version: "3"
 
 services:
 
-    software-developer-things-linux:
+    software-shinobi-linux:
 
-        container_name: software-developer-things-linux
+        container_name: software-shinobi-linux
         
-        hostname: software-developer-things
+        hostname: software-shinobi
 
-        image: softwareshinobi/software-developer-things-linux:latest
+        image: softwareshinobi/software-shinobi-ubuntu-linux:latest
 
         restart: "always"
 
-        domainname: linux.softwaredeveloperthings.com
+        domainname: linux.softwareshinobi.online
 
         ports:
 
-            - "4444:22"
+            - "42022:22"
 
-            - "4480:80"
+            - "42080:80"
