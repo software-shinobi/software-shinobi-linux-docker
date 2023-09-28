@@ -2,20 +2,19 @@ version: "3"
 
 services:
 
-    software-shinobi-linux:
+    software-shinobi-linux-trainer:
 
-        container_name: software-shinobi-linux
+        container_name: software-shinobi-linux-trainer
         
-        hostname: software-shinobi
-
-        image: softwareshinobi/software-shinobi-ubuntu-linux:latest
-
+        hostname: software-shinobi-linux
+        
+        image: softwareshinobi/software-shinobi-ubuntu-linux
+        
         restart: "always"
-
+        
         domainname: linux.softwareshinobi.online
-
+        
         ports:
-
-            - "42022:22"
-
-            - "42080:80"
+        
+            - "2222:22"
+            
