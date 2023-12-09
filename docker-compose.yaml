@@ -16,7 +16,7 @@ services:
 
         image: softwareshinobi/software-shinobi-linux
 
-        domainname: linux.softwareshinobi.online
+        domainname: linux.softwareshinobi.digital
 
         ports:
 
