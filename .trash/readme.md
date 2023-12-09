@@ -1,3 +1,27 @@
+
+## the alias
+
+## to do
+
+use the latest ubuntu image
+
+use an image that comes with a service already started
+
+i dont like the way the passwords are set
+
+i want a tag for keys auth
+
+
+
+
+
+
+
+
+
+
+
+
 # Project Summary
 
 **Customer:** [insert]

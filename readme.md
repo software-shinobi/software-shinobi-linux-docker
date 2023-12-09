@@ -1,41 +1,51 @@
 # software shinobi linux
 
+## intro
+
 I always wanted a custom build of Linux to call my own. This is that but dockerized and very incomplete. 
 
+## features
+
+* vim
+* openssh server
+* cmatrix
+
+## quick start
+
+get the code
+
 ```bash
-
 git clone https://github.com/software-shinobi/software-shinobi-linux.git
-
-cd software-shinobi-linux
-
-docker-compose build
-
-docker-compose up
-
 ```
 
+navigate to code directory
 
+```bash
+cd software-shinobi-linux
+```
 
+build docker image
 
-  450  ls
-  451  docker-compose build
-  452  docker-compose up -d
-  453  docker ps
-  454  history
-  455  ssh -p 2222 developer@localhost
-  456  ssh-keygen -f "/home/software-shinobi/.ssh/known_hosts" -R "[localhost]:2222"
-  457  ssh -p 2222 developer@localhost
-  458  history
+```bash
+docker-compose build
+```
 
-## the alias
+start the container
 
-## to do
+```bash
+docker-compose up -d
+```
 
-use the latest ubuntu image
+monitor running containers
 
-use an image that comes with a service already started
+```bash
+docker ps
+```
 
-i dont like the way the passwords are set
+connect to the server
 
-i want a tag for keys auth
+```bash
+ssh -p 2222 developer@localhost
+```
+
 ## namaste
