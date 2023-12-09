@@ -1,45 +1,53 @@
-# You Just Created A New Ubuntu Linux Server, Now What!?
+# software shinobi linux
 
-In this GitHub repo will find a server provisioning bash script that will update, upgrade and configure your new ubuntu linux server.
+## intro
 
-![Run This Provision Script On Every New Linux Server You Create](project-documentation/cover-image.png)
+I always wanted a custom build of Linux to call my own. This is that but dockerized and very incomplete. 
 
-## About This Repository
+![software shinobi linux](docs/cover.png)
 
-So you've just created a new ubuntu linux server.
+## features
 
-Naturally you ask the following question: "I've got a new ubuntu linux server, now what?"
+* vim
+* openssh server
+* cmatrix
 
-First things first, let's do some simple OS configuration and install some stuff.
+## quick start
 
-In this GitHub repo will find a server provisioning bash script that will update, upgrade and configure your new ubuntu linux server.
-
-## More Things To Do In An Idealized Future
-
-- [ ] Run the script into a Docker image for funsies.
-- [ ] Create standard users w/ passwords w/ keys
-- [ ] Configure Docker user permissions at install
-
-## Read The Companion Article
-
-I put together an article that goes into more detail about this provision script.
-
-So go read that article. Or don't, that's ok too.
-
-Somewhere in there is RTFM humor.
-
-[Read the provision script companion article](project-documentation/you-just-created-a-new-ubuntu-linux-server-now-what.md)
-
-## Quick Start: Ubuntu Linux New Server Provision Script
-
-Want to try and execute the ubuntu linux server provision script yourself?
-
-Great, i'm thrilled.
-
-Clone this repo and run the following command:
+get the code
 
 ```bash
-sudo bash source-code/provision-new-ubuntu-linux-server-basic.sh 
+git clone https://github.com/software-shinobi/software-shinobi-linux.git
 ```
 
-## Namaste.
+navigate to code directory
+
+```bash
+cd software-shinobi-linux
+```
+
+build docker image
+
+```bash
+docker-compose build
+```
+
+start the container
+
+```bash
+docker-compose up -d
+```
+
+monitor running containers
+
+```bash
+docker ps
+```
+
+connect to the server
+
+```bash
+ssh -p 2222 developer@localhost
+```
+
+## namaste
