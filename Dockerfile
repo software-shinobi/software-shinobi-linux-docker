@@ -3,7 +3,7 @@ FROM ubuntu:14.04
 
 ##
 
-COPY server-provisioning/ubuntu-server-provision.sh /ubuntu-server-provision.sh
+COPY provision/ubuntu-server-provision.sh /ubuntu-server-provision.sh
 
 RUN chmod +x /ubuntu-server-provision.sh
 

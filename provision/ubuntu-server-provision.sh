@@ -23,7 +23,7 @@ set -x;
 
 cat /etc/issue;
 
-echo "Software Developer Things Linux v4.4.44 !LTS" > /etc/issue;
+echo "Software Shinobi Linux" > /etc/issue;
 
 cat /etc/issue;
 
@@ -49,7 +49,7 @@ service ssh start;
 
 ##
 
-userName="software-developer";
+userName="developer";
 
 userID="4444";
 
@@ -65,7 +65,7 @@ chown root:root /home/users/$userName -R
 
 ## make this work later. moving on. // echo '`$userName`:`$userName`' | chpasswd
 
-echo 'software-developer:software-developer' | chpasswd
+echo 'developer:developer' | chpasswd
 
 ##
 
