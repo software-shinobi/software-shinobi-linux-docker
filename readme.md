@@ -4,6 +4,8 @@
 
 I always wanted a custom build of Linux to call my own. This is that but dockerized and very incomplete. 
 
+![software shinobi linux](docs/cover.png)
+
 ## features
 
 * vim
