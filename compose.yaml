@@ -12,7 +12,7 @@ services:
 
         container_name: software-shinobi-linux
 
-        hostname: software-shinobi-linux
+        hostname: SoftwareShinobiOS
 
         image: softwareshinobi/software-shinobi-linux
 

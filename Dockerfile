@@ -1,7 +1,9 @@
 
-FROM ubuntu:24.04
+FROM ubuntu:noble
 
 ##
+
+ARG DEBIAN_FRONTEND=noninteractive
 
 COPY provision/provision.bash /provision.bash
 
