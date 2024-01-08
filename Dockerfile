@@ -1,13 +1,13 @@
 
-FROM ubuntu:14.04
+FROM ubuntu:24.04
 
 ##
 
-COPY provision/ubuntu-server-provision.sh /ubuntu-server-provision.sh
+COPY provision/provision.bash /provision.bash
 
-RUN chmod +x /ubuntu-server-provision.sh
+##RUN chmod +x /ubuntu-server-provision.sh
 
-RUN /ubuntu-server-provision.sh
+RUN bash /provision.bash
 
 EXPOSE 22
 

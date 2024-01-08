@@ -6,11 +6,11 @@
 ##     suitable for newbies.
 ##
 ## This linux server will be hosted under
-##     linux.softwaredeveloperthings.com
+##     linux.softwareshinobi.digital
 ##
 ## Before you go, check read around my blog!
 ##
-##     https://www.softwaredeveloperthings.com
+##     https://www.softwareshinobi.digital
 ##
 
 ##
@@ -23,7 +23,7 @@ set -x;
 
 cat /etc/issue;
 
-echo "Software Shinobi Linux" > /etc/issue;
+echo "Shinobi OS" > /etc/issue;
 
 cat /etc/issue;
 
