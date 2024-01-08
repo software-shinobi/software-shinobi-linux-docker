@@ -1,53 +1,60 @@
-# software shinobi linux
+# ShinobiOS: Unleash Your Inner Hacker
 
-## intro
+Welcome to the world of ShinobiOS, a Dockerized Linux distro designed to unleash your inner hacker and explore the digital frontier.
 
-I always wanted a custom build of Linux to call my own. This is that but dockerized and very incomplete. 
+## Features
 
-![software shinobi linux](docs/cover.png)
+    Dockerized: Streamlined containerization for effortless application management and deployment.
+    Ubuntu Nobe Base: Built upon a lightweight and efficient Ubuntu foundation.
+    Password Authentication: Secure access control for your system.
+    Matrix Simulator: Dive into a world of code and virtual reality, just like Neo.
+    Hacker Simulator: Hone your skills and test your mettle in a safe and simulated environment.
+    SSH Server: Remote access for seamless connectivity and collaboration.
+    Web Server: Host your content and share it with the world.
+    Sudo: Elevate your privileges for administrative tasks.
+    Custom User: Create personalized accounts tailored to your specific needs.
 
-## features
+## Installation
 
-* vim
-* openssh server
-* cmatrix
+1. Download the ShinobiOS image
 
-## quick start
+2. Deploy using your preferred containerization platform
 
-get the code
+3. Access the ShinobiOS terminal
 
-```bash
-git clone https://github.com/software-shinobi/software-shinobi-linux.git
-```
+4. Customize your configuration
 
-navigate to code directory
+5. Explore the vast array of features
 
-```bash
-cd software-shinobi-linux
-```
+## Usage
 
-build docker image
+    Hacker Simulator: shinobi-hack
+    Matrix Simulator: shinobi-matrix
+    Web Server: shinobi-web
+    SSH Server: shinobi-ssh
+    Custom User Creation: sudo adduser <username>
 
-```bash
-docker-compose build
-```
+## Contributing
 
-start the container
+    Fork the repository
+    Create a branch for your changes
+    Commit your changes
+    Push to your fork
+    Submit a pull request
 
-```bash
-docker-compose up -d
-```
+## Community
 
-monitor running containers
+    Join the ShinobiOS Discord server
+    Follow us on Twitter
 
-```bash
-docker ps
-```
+## License
 
-connect to the server
+ShinobiOS is licensed under the MIT License.
 
-```bash
-ssh -p 2222 developer@localhost
-```
+## Let the Hacking Begin!
 
-## namaste
+`ShinobiOS Logo: Insert_ShinobiOS_Logo_Here.png`
+
+Unleash your potential and explore the limitless possibilities of ShinobiOS.
+
+Ready to dive in? Get started today!
