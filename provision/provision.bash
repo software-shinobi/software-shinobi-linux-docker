@@ -23,7 +23,7 @@ set -x;
 
 cat /etc/issue;
 
-echo "Shinobi OS 22.04" > /etc/issue;
+echo "Shinobi OS 22 Sian" > /etc/issue;
 
 cat /etc/issue;
 
@@ -33,18 +33,18 @@ apt-get update;
 
 ##
 
-sudo apt-get install ca-certificates curl;
+apt-get install ca-certificates curl;
 
 ## Installing Docker + Compose (Not Docker Compose)
 
 
 ### APT package dependency setup
 
-sudo install -m 0755 -d /etc/apt/keyrings
+install -m 0755 -d /etc/apt/keyrings
 
-sudo curl -fsSL https://download.docker.com/linux/ubuntu/gpg -o /etc/apt/keyrings/docker.asc
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg -o /etc/apt/keyrings/docker.asc
 
-sudo chmod a+r /etc/apt/keyrings/docker.asc
+chmod a+r /etc/apt/keyrings/docker.asc
 
 echo \
   "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.asc] https://download.docker.com/linux/ubuntu \
@@ -53,9 +53,9 @@ echo \
 
 ### Docker Engine situation install
 
-sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 
-sudo docker run hello-world
+docker run hello-world
 
 ## Install more software
 
@@ -64,8 +64,6 @@ apt-get install -y vim zip wget net-tools;
 ## install and start a local ssh server
 
 apt-get install -y openssh-server;
-
-apt-get install -y sudo;
 
 service ssh start;
 
