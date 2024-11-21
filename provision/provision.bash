@@ -29,11 +29,11 @@ cat /etc/issue;
 
 ## updating APT software packages
 
-apt-get update;
+apt update;
 
 ##
 
-apt-get install ca-certificates curl;
+apt install -y ca-certificates curl;
 
 ## Installing Docker + Compose (Not Docker Compose)
 
@@ -53,17 +53,17 @@ echo \
 
 ### Docker Engine situation install
 
-apt-get install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+apt install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 
 docker run hello-world
 
 ## Install more software
 
-apt-get install -y vim zip wget net-tools;
+apt install -y vim zip wget net-tools;
 
 ## install and start a local ssh server
 
-apt-get install -y openssh-server;
+apt install -y openssh-server;
 
 service ssh start;
 
