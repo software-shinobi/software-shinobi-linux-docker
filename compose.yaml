@@ -1,22 +1,21 @@
-version: "3.8"
 
 services:
 
     software-shinobi-linux:
         
+        container_name: software-shinobi-linux
+
         build: 
 
             context: .
 
             dockerfile: Dockerfile
 
-        container_name: software-shinobi-linux
+        image: softwareshinobi/embanet-ubuntu-linux:sian
 
-        hostname: shinobios
+        hostname: sian
 
-        image: softwareshinobi/software-shinobi-linux
-
-        domainname: linux.softwareshinobi.digital
+        domainname: sian.embanet.online
 
         ports:
 
